@@ -1,0 +1,172 @@
+:root
+{
+  --bg:#0d0f14;--squar:#121622;--text:#e8e8f0;--seconde:#9aa3b2;
+  --accent:#74f0a7;--accent-2:#7cc9ff;--alert:#ff6b6b;
+}
+
+body
+{
+  margin:0;font-family:monospace;
+  background:var(--bg);
+  color:var(--text)
+}
+
+#matrix
+{
+  position: fixed;
+  inset: 0;          
+  z-index: -1;       
+  background: var(--bg, #0d0f14);
+  display: block;    
+  opacity: 0.4;
+}
+
+.profile 
+{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.photo
+{
+  width: clamp(96px, 18vw, 140px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 auto;        
+  border: 2px solid #26304a;
+}
+
+.Bio
+{
+  background:var(--squar);
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid #26304a;
+  padding: 12px 14px;
+  flex: 1 1 320px;
+}
+
+.wrapper
+{
+  max-width:900px;
+  margin:auto;
+  padding:20px
+}
+
+.terminal
+{
+  background:var(--squar);
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid #26304a
+}
+
+.term-topbar
+{
+  display:flex;
+  align-items:center;
+  gap:8px;padding:8px;
+  background:#1c2235
+}
+
+.dot
+{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  display:inline-block
+}
+
+.red
+{
+  background:var(--alert)
+}
+
+.yellow
+{
+  background:#ffd166
+}
+
+.green
+{
+  background:#2dcc70
+}
+
+.screen
+{
+  min-height:250px;padding:16px
+}
+
+.line
+{
+  margin-bottom:4px
+}
+
+.cli
+{display:flex;
+  gap:8px;
+  background:#0f1420;
+  padding:10px
+}
+
+.cli input
+{
+  flex:1;background:transparent;
+  border:0;
+  color:var(--text)
+}
+
+.shortcuts
+{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;padding:10px;
+  background:#0f1420
+}
+
+.shortcuts button
+{
+  background:#172033;
+  border:1px solid #2a3655;
+  color:#cfe6ff;
+  padding:6px 10px;
+  border-radius:8px;
+  cursor:pointer
+}
+
+.hidden
+{
+  display:none
+}
+
+.panel
+{
+  background:#121a2d;
+  padding:16px;
+  border-radius:12px
+}
+
+.primary
+{
+  background:var(--accent);
+  border:0;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer
+}
+
+.status
+{
+  color:var(--accent)
+}
+
+.site-footer
+{
+  text-align:center;
+  color:var(--muted);
+  margin-top:20px
+}

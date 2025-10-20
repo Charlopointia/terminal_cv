@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal CV — Votre Nom</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<main class="wrapper">
+  <header>
+    <div class="profile">
+     <img src="profil_pict.png" alt="my pict" class="photo">
+      <div class="Bio">
+       <ul>
+         <li><p>Charly Brachet</p></li>
+         <li><p>26 ans</p></li>
+         <li><p>Mind set: "Mon succé est pavé d'échecs"<p></li>
+       </ul>
+      </div>
+    </div>
+  </header>
+  <section class="terminal">
+    <div class="term-topbar">
+      <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      <span class="title">Terminal Curiculum</span>
+    </div>
+    <div id="screen" class="screen">
+      <div class="line muted">Tapez une <b>commande</b> puis entrée.</div>
+    </div>
+    <form id="cli" class="cli">
+      <input id="command" type="text" placeholder="help" required>
+      <button type="submit" class="send">↩</button>
+    </form>
+    <div class="shortcuts">
+      <button data-cmd="about">about</button>
+      <button data-cmd="skills">skills</button>
+      <button data-cmd="projects">projects</button>
+      <button data-cmd="contact">contact</button>
+      <button data-cmd="clear">clear</button>
+      <button data-cmd="help">help</button>
+    </div>
+  </section>
+
+  <section id="contact-section" class="panel hidden">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <ul>
+      <label>Nom <input id="name" required></label>
+      <label>Email <input id="email" type="email" required></label>
+      <label>Message <textarea id="message" required></textarea></label>
+      <button type="submit" class="primary">Envoyer</button>
+      <p id="contactStatus" class="status"></p>
+      </ul>
+    </form>
+  </section>
+</main>
+<footer class="site-footer"><small>&copy; <span id="year"></span> Charly Brachet</small></footer>
+<script src="script.js"></script>
+<script src="Animation_matrix.js"></script>
+</body>
+</html>
